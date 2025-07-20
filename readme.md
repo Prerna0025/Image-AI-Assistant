@@ -3,7 +3,6 @@
 This project is an **AI Assistant** that can:
 
 ✅ **Extract text from images (OCR)**\
-✅ **Perform simple math operations (e.g., division)**\
 ✅ **Handle multimodal conversations (text + image)**
 
 The agent is powered by **GPT-4o**, **LangGraph**, and a **Gradio UI**, making it interactive and extensible.
@@ -15,9 +14,7 @@ The agent is powered by **GPT-4o**, **LangGraph**, and a **Gradio UI**, making i
 Imagine an assistant where you can:
 
 - Upload an **image with text**, and ask:\
-  **"Extract all text from this image."**
-- Perform simple computations by asking:\
-  **"What is 15 divided by 3?"**
+  **"Extract all text from this image.And provide the details of the content present in the Image"**
 
 This project demonstrates how to combine tools, LLMs, and images in an interactive workflow.
 
@@ -94,7 +91,6 @@ http://127.0.0.1:7860/
 2. Enter a query (e.g., "Extract text from this image" or "Divide 10 by 2")
 3. The agent decides whether to:
    - Call the **OCR tool**
-   - Perform **math**
    - Respond with text
 
 ---
@@ -104,7 +100,6 @@ http://127.0.0.1:7860/
 | Tool Name         | Description                                     |
 | ----------------- | ----------------------------------------------- |
 | **extract\_text** | Extracts text from an image using GPT-4o vision |
-| **divide**        | Divides two numbers safely                      |
 
 ---
 
@@ -128,15 +123,6 @@ http://127.0.0.1:7860/
   Extract all text from the uploaded image.
   ```
 
-### Division:
-
-- Input:
-  ```
-  What is 20 divided by 5?
-  ```
-
----
-
 ## 🗺️ Graph Visualization
 
 If supported, the agent displays its execution graph using **LangGraph’s Mermaid diagram**.\
@@ -154,8 +140,7 @@ This helps visualize decision points between LLM responses and tool calls.
 
 ## 🤝 Contributing
 
-Pull requests and issues are welcome!\
-For major changes, please open an issue first.
+Pull requests and issues are welcome!
 
 ---
 
